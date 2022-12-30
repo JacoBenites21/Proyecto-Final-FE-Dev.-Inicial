@@ -1,0 +1,23 @@
+body{
+  background-color: #6DA7B8;
+}
+.hero {
+  background: url(../images/adorable-kitty-with-monochrome-wall-behind-her.jpg) no-repeat;
+  background-size: cover;
+  height: 50vh;
+  min-height: 700px;
+  color: white;
+}
+footer {
+  background-color: #aaa;
+}
+html{
+ 
+  scroll-behavior: smooth;
+}
+.scroll_section{
+  scroll-margin-top: 60px;
+}
+.productos {
+  padding: 100px;
+}

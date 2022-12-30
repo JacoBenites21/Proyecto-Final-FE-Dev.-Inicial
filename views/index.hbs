@@ -1,0 +1,136 @@
+<div class="container-fluid scroll_section">
+    <div id="home" class="row align-items-center hero scroll_section">
+        <div id="hero" class="col-lg-3 offset-lg-2">
+            <h1>Cafetería Cleopatra</h1>
+            <p>Cafetería de especialidad con fuerte presencia de felinos rescatados.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row my-3">
+  <div id="novedades" class="col-md-5 offset-md-2 py-3 text-light">
+    <h2>Poemas</h2>
+    <ul class="lista-novedades">
+      {{#each  novedades}}
+      
+      <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img style="height: 40px;" src="https://cdn-icons-png.flaticon.com/128/2171/2171970.png">{{titulo}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{#each novedades}}
+  <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>{{subtitulo}}</h4>
+          <p>{{cuerpo}}</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+
+
+
+ <section class="Lideres">
+      <div id="anfitriones" class="d-flex flex-column align-items-center my-4 text-light">
+        <h5 class="mb-0">
+          Nuestros
+        </h5>
+        <h4>Anfitriones</h4>
+      </div>
+    </section>
+
+ <section id="gatos" class="card-group mx-4 my-4 gap-2 text-light">
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/foto-gratis/enfoque-selectivo-disparo-primer-plano-gato-atigrado-peludo-gris-sentado-silla-madera_181624-8432.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.1.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Cleopatra</h5>
+          <p class="card-text">La dueña del hogar y todos los corazones.</p>
+        </div>
+      </div>
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/fotos-premium/ginger-atigrado-gatito-sobre-sus-patas-traseras_107760-273.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.1.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Caos</h5>
+          <p class="card-text">Su nombre evoca el comportamiento de los gatos naranjas: caótico, divertido y juguetón.</p>
+        </div>
+      </div>
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/fotos-premium/gato-yace-boca-abajo-sobre-fondo-blanco_275337-10.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.1.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Ameba</h5>
+          <p class="card-text">La pachorra por excelencia. Le gusta ser llevada a todos lados a upa y ser mimada como una reina.</p>
+        </div>
+      </div>
+    </section>
+     <section id="gatos" class="card-group mx-4 my-4 gap-2 text-light">
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/foto-gratis/lindo-gato-gris-recto-escoces-cazando-jugando_574295-452.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.2.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Catrasca</h5>
+          <p class="card-text">Divertido y torpe. Se deleita por sus locuras.</p>
+        </div>
+      </div>
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/foto-gratis/primer-plano-lindo-gatito-descansando-sofa_181624-37234.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.2.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Siesta</h5>
+          <p class="card-text">Es juguetón y mimoso pero es dificil encontrarlo despierto.</p>
+        </div>
+      </div>
+      <div class="card p-2 border h-110 bg-transparent">
+        <img src="https://img.freepik.com/fotos-premium/retrato-gato-scottish-fold-sobre-fondo-azul-aislado_369656-1832.jpg?size=626&ext=jpg&uid=R88752054&ga=GA1.1.1803933918.1672114040"
+          class="card-img-top h-70 w-80 object-cover" alt="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Flor</h5>
+          <p class="card-text">Arisca al conocerte, pero al tiempo te busca por mimos.</p>
+        </div>
+      </div>
+    </section>
+
+<div class="col-md-4 mt-4 mt-sm-0 scroll_section text-light">
+    <div id="contacto">
+        <h2>Contactanos</h2>
+        <form action="/" method="post" class="formulario">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre">
+        </p>
+         <p>
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido">
+        </p>
+         <p>
+          <label for="email">Email</label>
+          <input type="text" name="email">
+        </p>
+         <p>
+          <label for="telefono">Telefono</label>
+          <input type="text" name="telefono">
+        </p>
+         <p>
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="" cols="30" rows="5"></textarea>
+        </p>
+        <p class="acciones">
+          <input type="submit" value="Enviar"/>
+        </p>
+        </form>
+        <p>{{ message }}</p>
+    </div>
+
+</div>
